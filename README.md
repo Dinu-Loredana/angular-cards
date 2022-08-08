@@ -1,5 +1,29 @@
 # Cards
 
+Small Angular application to display cards- to learn and practice Angular.
+Used bulma.io for styling.
+
+Topics: static filer, styling global or specific component, create new component, pass data from parte to child, host element selector
+
+Notes:
+
+- Add static files (assets folder - images, JS files, audio)
+- Styling: styles.css - to add global style and imported styling libraries (bulma). To style a specific component and not apply CSS to globally, use name.component.css
+- Components in Angular: app made of multiple components; each compon implements one thing; can be reused, nested; the most parent of the app is the App component; each comp has its own template, clss, css and spec file; when duplicating HTmL - sign we need to create a new component.
+- To generate new component, use "ng generate component <name>" command.
+- It's selector name ("app-card") can be used inside other comp (as child) with: <app-card></app-card>.
+- Pass data from parent to child/ input binding:
+  #the data will be stored inside parent component;
+  #in the parent template, find the place where the child is called and and add a binding to the child: [property name]='data that want to be sent';
+  #in the child compon class file, import Input from Angular Core and add @Input decorator to set the property name that the child will receive data for - tells the child comp what data will receive from the parent;
+  #use the data in the child template using interpolationg.
+- Structural Directives \*ngFor - looping array
+- :host element selector - select "app-root" element and style it inside app.component.css
+
+to loop through the array instead we can use \*ngFor and do the same as the previous step.
+
+Should we want to select the app root and style it with CSS we can do it in the styles.css file located in the main src folder by selecting it with app-root. We can also use :host selector inside the css file of the same component/appComp.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.8.
 
 ## Development server
