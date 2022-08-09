@@ -20,9 +20,6 @@ Notes:
 - Structural Directives \*ngFor - looping array
 - :host element selector - select "app-root" element and style it inside app.component.css
 
-to loop through the array instead we can use \*ngFor and do the same as the previous step.
-
-Should we want to select the app root and style it with CSS we can do it in the styles.css file located in the main src folder by selecting it with app-root. We can also use :host selector inside the css file of the same component/appComp.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.8.
 
